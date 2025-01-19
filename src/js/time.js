@@ -5,8 +5,6 @@ export const time = () => {
     const [marriageDiv, receptionDiv] = timeContainer.querySelectorAll('div div');
     const [mapLinkMarriage, mapLinkReception] = timeContainer.querySelectorAll('div a');
     const [addressParagraphMarriage, addressParagraphReception] = timeContainer.querySelectorAll('div p');
-    // const mapLinkMarriage = marriageDiv.querySelector('a');
-    // const addressParagraphMarriage = marriageDiv.querySelector('a + p');
 
     const createTimeListItem = (title, details) => (
         `<h3>${title}</h3>
@@ -16,11 +14,9 @@ export const time = () => {
 
     marriageDiv.innerHTML = createTimeListItem('Nikah', data.time.marriage);
     mapLinkMarriage.href = data.link.mapMarriage;
-    addressParagraphMarriage.textContent = data.time.address;
+    addressParagraphMarriage.textContent = data.time.marriage.address;
 
     receptionDiv.innerHTML = createTimeListItem('Dawat-e-Walima', data.time.reception);
     mapLinkReception.href = data.link.mapReception;
     addressParagraphReception.textContent = data.time.reception.address;
-    // mapLink.href = data.link.map;
-    // addressParagraph.textContent = data.time.address;
 };
