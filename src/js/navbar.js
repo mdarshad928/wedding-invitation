@@ -1,5 +1,5 @@
-import {data} from "../assets/data/data.js";
-import {renderElement} from "../utils/helper.js";
+import { data } from "../assets/data/data.js";
+import { renderElement } from "../utils/helper.js";
 
 export const navbar = () => {
     const containerNavbar = document.querySelector('nav');
@@ -8,7 +8,7 @@ export const navbar = () => {
     const listItemNavbar = (data) => (
         ` <a href=${data.path}>
             <i class="${data.icon}"></i>
-            <span>${data.teks}</span>
+            <span>${data.text}</span>
         </a>`
     );
 

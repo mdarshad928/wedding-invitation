@@ -72,20 +72,20 @@ export const data = {
         }
     ],
 
-    bank: [
-        {
-            id: 1,
-            name: 'Lorem Ipsum',
-            icon: './src/assets/images/bca.png',
-            rekening: '12345678'
-        },
-        {
-            id: 2,
-            name: 'Ipsum Lorem',
-            icon: './src/assets/images/bri.png',
-            rekening: '12345678'
-        },
-    ],
+    // bank: [
+    //     {
+    //         id: 1,
+    //         name: 'Lorem Ipsum',
+    //         icon: './src/assets/images/bca.png',
+    //         rekening: '12345678'
+    //     },
+    //     {
+    //         id: 2,
+    //         name: 'Ipsum Lorem',
+    //         icon: './src/assets/images/bri.png',
+    //         rekening: '12345678'
+    //     },
+    // ],
 
     audio: './src/assets/audio/wedding.mp3',
 
@@ -94,31 +94,31 @@ export const data = {
     navbar: [
         {
             id: 1,
-            teks: 'Home',
+            text: 'Home',
             icon: 'bx bxs-home-heart',
             path: '#home',
         },
         {
             id: 2,
-            teks: 'Mempelai',
+            text: 'To-be-Wed',
             icon: 'bx bxs-group',
             path: '#bride',
         },
         {
             id: 3,
-            teks: 'Tanggal',
+            text: 'Date',
             icon: 'bx bxs-calendar-check',
             path: '#time',
         },
         {
             id: 4,
-            teks: 'Gallery',
+            text: 'Gallery',
             icon: 'bx bxs-photo-album',
             path: '#gallery',
         },
         {
             id: 5,
-            teks: 'Ucapan',
+            text: 'Greeting',
             icon: 'bx bxs-message-rounded-dots',
             path: '#wishas',
         },
