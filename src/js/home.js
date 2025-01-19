@@ -1,12 +1,12 @@
-import {data} from "../assets/data/data.js";
-import {monthNameToNumber} from "../utils/helper.js";
+import { data } from "../assets/data/data.js";
+import { monthNameToNumber } from "../utils/helper.js";
 
 export const home = () => {
     const homeContainer = document.querySelector('.home');
     const [_, figureElement, timeElement, homeTime, calendarAnchor] = homeContainer.children;
 
-    const generateFigureContent = ({bride}) => {
-        const {L: {name: brideLName}, P: {name: bridePName}, couple: coupleImage} = bride;
+    const generateFigureContent = ({ bride }) => {
+        const { L: { name: brideLName }, P: { name: bridePName }, couple: coupleImage } = bride;
         return `
             <img src="${coupleImage}" alt="couple animation">
             <figcaption>
@@ -14,8 +14,8 @@ export const home = () => {
             </figcaption>`;
     };
 
-    const generateTimeContent = ({time}) => {
-        const {year, month, date, day} = time.marriage;
+    const generateTimeContent = ({ time }) => {
+        const { year, month, date, day } = time.marriage;
         return `
         <time datetime="${year}-${String(monthNameToNumber(month)).padStart(2, '0')}-${String(date).padStart(2, '0')}">
             ${day}, ${date} ${month} ${year}
@@ -24,16 +24,16 @@ export const home = () => {
 
     const generateCountdownMarkup = (days, hours, minutes, seconds) => {
         return `<div>
-                    <p>${days}<br><span>Hari</span></p>
+                    <p>${days}<br><span>Day</span></p>
                 </div>
                 <div>
-                    <p>${hours}<br><span>Jam</span></p>
+                    <p>${hours}<br><span>Hour</span></p>
                 </div>
                 <div>
-                    <p>${minutes}<br><span>Menit</span></p>
+                    <p>${minutes}<br><span>Minute</span></p>
                 </div>
                 <div>
-                    <p>${seconds}<br><span>Detik</span></p>
+                    <p>${seconds}<br><span>Second</span></p>
                 </div>`;
     };
 
@@ -55,7 +55,7 @@ export const home = () => {
     };
 
     const startCountdown = (homeTime, timeData) => {
-        const {year, month, date} = timeData.marriage;
+        const { year, month, date } = timeData.marriage;
         const endTime = new Date(`${String(year)}-${String(monthNameToNumber(month)).padStart(2, '0')}-${String(date).padStart(2, '0')}T00:00:00`);
 
         updateCountdown(endTime, homeTime);
@@ -63,9 +63,9 @@ export const home = () => {
     };
 
     const initializeHome = () => {
-        const {bride, time, link} = data;
-        figureElement.innerHTML = generateFigureContent({bride});
-        timeElement.innerHTML = generateTimeContent({time});
+        const { bride, time, link } = data;
+        figureElement.innerHTML = generateFigureContent({ bride });
+        timeElement.innerHTML = generateTimeContent({ time });
         calendarAnchor.href = link.calendar;
         startCountdown(homeTime, time);
     };
