@@ -9,13 +9,13 @@ import {
 import { data } from "../assets/data/data.js";
 import { comentarService } from "../services/comentarService.js";
 
-export const wishas = () => {
-    const wishasContainer = document.querySelector('.wishas');
-    const [_, form] = wishasContainer.children[2].children;
-    const [peopleComentar, ___, containerComentar] = wishasContainer.children[3].children;
+export const wishes = () => {
+    const wishesContainer = document.querySelector('.wishes');
+    const [_, form] = wishesContainer.children[2].children;
+    const [peopleComentar, ___, containerComentar] = wishesContainer.children[3].children;
     const buttonForm = form.children[6];
-    const pageNumber = wishasContainer.querySelector('.page-number');
-    const [prevButton, nextButton] = wishasContainer.querySelectorAll('.button-grup button');
+    const pageNumber = wishesContainer.querySelector('.page-number');
+    const [prevButton, nextButton] = wishesContainer.querySelectorAll('.button-grup button');
 
     // const listItemBank = (data) => (
     //     `  <figure data-aos="zoom-in" data-aos-duration="1000">
@@ -26,8 +26,8 @@ export const wishas = () => {
     // );
 
     // const initialBank = () => {
-    //     const wishasBank = wishasContainer.children[1];
-    //     const [_, __, containerBank] = wishasBank.children;
+    //     const wishesBank = wishesContainer.children[1];
+    //     const [_, __, containerBank] = wishesBank.children;
 
     //     renderElement(data.bank, containerBank, listItemBank);
 

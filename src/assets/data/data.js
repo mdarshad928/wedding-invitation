@@ -28,7 +28,7 @@ export const data = {
             day: 'Monday',
             hours: {
                 start: '08.00',
-                finish: 'Selesai'
+                finish: 'Until Finish'
             }
         },
         reception: {
@@ -38,15 +38,15 @@ export const data = {
             day: 'Wednesday',
             hours: {
                 start: '18.00',
-                finish: 'Selesai'
+                finish: 'Until Finish'
             }
         },
         address: 'Pasnauli Gagan, Maharajganj, Siwan, Bihar (841238)'
     },
 
     link: {
-        calendar: 'https://calendar.app.google/oSVLRMYC79GzuA4f9',
-        map: 'https://maps.app.goo.gl/q1Ask2Jgd4ekiiKBA',
+        calendar: 'https://calendar.app.google/6RJxpphgAxioUhBM9',
+        map: 'https://maps.app.goo.gl/LqtsU6iJP6N1EnrQA',
     },
 
     gallery: [
@@ -120,7 +120,7 @@ export const data = {
             id: 5,
             text: 'Greeting',
             icon: 'bx bxs-message-rounded-dots',
-            path: '#wishas',
+            path: '#wishes',
         },
     ],
 }
