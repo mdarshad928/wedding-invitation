@@ -29,7 +29,8 @@ export const data = {
             hours: {
                 start: '08.00',
                 finish: 'Until Finish'
-            }
+            },
+            address: 'Pasnauli Gagan, Maharajganj, Siwan, Bihar (841238)'
         },
         reception: {
             year: '2025',
@@ -39,14 +40,16 @@ export const data = {
             hours: {
                 start: '18.00',
                 finish: 'Until Finish'
-            }
+            },
+            address: 'Pasnauli Gagan, Maharajganj, Siwan, Bihar (841238)'
         },
-        address: 'Pasnauli Gagan, Maharajganj, Siwan, Bihar (841238)'
+        // address: 'Pasnauli Gagan, Maharajganj, Siwan, Bihar (841238)'
     },
 
     link: {
         calendar: 'https://calendar.app.google/6RJxpphgAxioUhBM9',
-        map: 'https://maps.app.goo.gl/LqtsU6iJP6N1EnrQA',
+        mapMarriage: 'https://maps.app.goo.gl/VMQG6kFqpJ8gsWj69',
+        mapReception: 'https://maps.app.goo.gl/LqtsU6iJP6N1EnrQA',
     },
 
     gallery: [
