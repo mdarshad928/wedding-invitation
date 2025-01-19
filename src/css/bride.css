@@ -60,7 +60,7 @@
 }
 
 .bride i,
-.hadist i,
+.hadith i,
 .time a+p+i,
 .gallery>i {
     font-size: 3rem;
@@ -95,7 +95,7 @@
     bottom: 6rem;
 }
 
-.hadist {
+.hadith {
     width: 100%;
     padding: 4rem 8rem;
     text-align: center;
@@ -103,35 +103,35 @@
     position: relative;
 }
 
-.hadist h2 {
+.hadith h2 {
     font-size: var(--fontSize-heading-base);
     font-family: var(--sacramento);
     font-weight: 400;
     margin-bottom: 1rem;
 }
 
-.hadist p span {
+.hadith p span {
     display: block;
     margin-top: 1rem;
     font-size: 1.1rem;
 }
 
-.hadist i {
+.hadith i {
     top: 16rem;
     left: 8rem;
 }
 
-.hadist svg {
+.hadith svg {
     position: absolute;
     left: 0;
     right: 0;
     z-index: -10;
 }
 
-.hadist svg:nth-of-type(1) {
+.hadith svg:nth-of-type(1) {
     top: -8rem;
 }
 
-.hadist svg:nth-of-type(2) {
+.hadith svg:nth-of-type(2) {
     bottom: -15rem;
 }

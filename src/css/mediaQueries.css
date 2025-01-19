@@ -41,20 +41,20 @@
         right: 1.4rem;
     }
 
-    .hadist {
+    .hadith {
         padding: 2rem 1.4rem;
     }
 
-    .hadist i {
+    .hadith i {
         left: 1.4rem;
         top: 24rem;
     }
 
-    .hadist svg:nth-of-type(1) {
+    .hadith svg:nth-of-type(1) {
         top: -4rem;
     }
 
-    .hadist svg:nth-of-type(2) {
+    .hadith svg:nth-of-type(2) {
         bottom: -5rem;
     }
 
