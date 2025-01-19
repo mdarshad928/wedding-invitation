@@ -55,12 +55,12 @@ export const wishas = () => {
 
         if (newDate.days < 1) {
             if (newDate.hours < 1) {
-                date = `${newDate.minutes} menit yang lalu`;
+                date = `${newDate.minutes} minutes ago`;
             } else {
-                date = `${newDate.hours} jam, ${newDate.minutes} menit yang lalu`;
+                date = `${newDate.hours} hour, ${newDate.minutes} minutes ago`;
             }
         } else {
-            date = `${newDate.days} hari, ${newDate.hours} jam yang lalu`;
+            date = `${newDate.days} days, ${newDate.hours} hours ago`;
         }
 
         return ` <li data-aos="zoom-in" data-aos-duration="1000">
@@ -125,7 +125,7 @@ export const wishas = () => {
         } catch (error) {
             return `Error : ${error.message}`;
         } finally {
-            buttonForm.textContent = 'Kirim';
+            buttonForm.textContent = 'Comment';
             form.reset();
         }
     });
@@ -177,5 +177,5 @@ export const wishas = () => {
     });
 
     initialComentar().then();
-    initialBank();
+    // initialBank();
 };
