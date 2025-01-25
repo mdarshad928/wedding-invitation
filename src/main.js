@@ -17,4 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
     time();
     gallery();
     wishes();
+    const volumeDowm = () => {
+        var audio = document.getElementById("myaudio");
+        audio.volume = 0.2;
+    };
+    volumeDowm();
 });
