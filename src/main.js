@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     wishes();
     const volumeDowm = () => {
         var audio = document.getElementById("myaudio");
-        audio.volume = 0.2;
+        audio.volume = 0.1;
     };
     volumeDowm();
 });
