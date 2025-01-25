@@ -1,17 +1,17 @@
-import {data} from "../assets/data/data.js";
+import { data } from "../assets/data/data.js";
 
-export const comentarService = {
-    getComentar: async function () {
-        try {
-            const response = await fetch(data.api);
-            return await response.json();
-        } catch (error) {
-            return {error: error && error.message};
-        }
-    },
+export const commentService = {
+    // getComment: async function () {
+    //     try {
+    //         const response = await fetch(data.api);
+    //         return await response.json();
+    //     } catch (error) {
+    //         return { error: error && error.message };
+    //     }
+    // },
 
-    addComentar: async function ({id, name, status, message, date, color}) {
-        const comentar = {
+    addComment: async function ({ id, name, status, message, date, color }) {
+        const comment = {
             id: id,
             name: name,
             status: status,
@@ -27,14 +27,14 @@ export const comentarService = {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(comentar),
+                body: JSON.stringify(comment),
             });
 
             return await response.json();
 
         } catch (error) {
             console.error('Post error:', error);
-            return {error: error.message};
+            return { error: error.message };
         }
     },
 };

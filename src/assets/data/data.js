@@ -75,21 +75,6 @@ export const data = {
         }
     ],
 
-    // bank: [
-    //     {
-    //         id: 1,
-    //         name: 'Lorem Ipsum',
-    //         icon: './src/assets/images/bca.png',
-    //         rekening: '12345678'
-    //     },
-    //     {
-    //         id: 2,
-    //         name: 'Ipsum Lorem',
-    //         icon: './src/assets/images/bri.png',
-    //         rekening: '12345678'
-    //     },
-    // ],
-
     audio: './src/assets/audio/wedding.mp3',
 
     api: 'https://script.google.com/macros/s/AKfycbyWs3kp3QrZZIPt4G8UoXsQdgzemOn29jabrjcwbeE2MxGmzpf1ss2nVRvTZvWi2zFxDw/exec',

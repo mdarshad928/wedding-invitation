@@ -55,14 +55,14 @@
     - Open the Google Sheets file, go to Extensions > Apps Script, and add the following code:
 
     ```javascript
-    const SHEET_NAME = 'comentar';
+    const SHEET_NAME = 'comment';
 
     const doGet = () => {
       try {
         const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(SHEET_NAME);
         const [, ...data] = sheet.getDataRange().getValues();
 
-        const comentar = data.map(([id, name, status, message, date, color]) => ({
+        const comment = data.map(([id, name, status, message, date, color]) => ({
           id,
           name,
           status,
@@ -74,7 +74,7 @@
         const response = {
           status: 200,
           message: 'Success get services',
-          comentar
+          comment
         };
 
         return ContentService

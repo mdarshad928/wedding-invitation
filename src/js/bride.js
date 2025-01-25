@@ -1,5 +1,5 @@
-import {data} from "../assets/data/data.js";
-import {renderElement} from "../utils/helper.js";
+import { data } from "../assets/data/data.js";
+import { renderElement } from "../utils/helper.js";
 
 export const bride = () => {
     const brideCouple = document.querySelector('.bride_couple ul');
@@ -9,7 +9,7 @@ export const bride = () => {
                    <img src=${data.image} alt="${data.name} animation">
                    <figcaption>${data.name}</figcaption>
               </figure>
-              <p>${data.child} <br>dari <br> Bapak ${data.father} & Ibu ${data.mother}</p>
+              <p>${data.child} <br>from <br>  ${data.father} & Family</p>
               <span style="display: ${data.id === 2 ? 'none' : 'block'}">&</span>
         </li>`
     )
