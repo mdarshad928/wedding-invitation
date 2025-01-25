@@ -4,16 +4,16 @@ export const data = {
             id: 1,
             name: 'Md Arshad',
             child: 'Son of Abdul Hannan',
-            father: 'Lorem',
-            mother: 'Ipsum',
+            father: 'Abdul Hannan',
+            mother: '',
             image: './src/assets/images/cowo.png'
         },
         P: {
             id: 2,
             name: 'Rani Ali',
             child: 'Daughter of Asgar Ali',
-            father: 'Lorem',
-            mother: 'Ipsum',
+            father: 'Asgar Ali',
+            mother: '',
             image: './src/assets/images/cewe.png'
         },
 
@@ -27,10 +27,10 @@ export const data = {
             date: '24',
             day: 'Monday',
             hours: {
-                start: '08.00',
+                start: '18.00',
                 finish: 'Until Finish'
             },
-            address: 'Pasnauli Gagan, Maharajganj, Siwan, Bihar (841238)'
+            address: 'At residence of Asgar Ali, Mustafabad, Goriakothi, Siwan, Bihar'
         },
         reception: {
             year: '2025',
@@ -41,9 +41,8 @@ export const data = {
                 start: '18.00',
                 finish: 'Until Finish'
             },
-            address: 'Pasnauli Gagan, Maharajganj, Siwan, Bihar (841238)'
+            address: 'At residence of Abdul Hannan, Pasnauli Gagan, Maharajganj, Siwan, Bihar (841238)'
         },
-        // address: 'Pasnauli Gagan, Maharajganj, Siwan, Bihar (841238)'
     },
 
     link: {
