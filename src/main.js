@@ -9,7 +9,11 @@ import { welcome } from "./js/welcome.js";
 // load content
 document.addEventListener('DOMContentLoaded', () => {
     AOS.init();
-
+    const volumeDowm = () => {
+        var audio = document.getElementById("audio");
+        audio.volume = 0.1;
+    };
+    volumeDowm();
     welcome();
     navbar();
     home();
@@ -17,9 +21,5 @@ document.addEventListener('DOMContentLoaded', () => {
     time();
     gallery();
     wishes();
-    const volumeDowm = () => {
-        var audio = document.getElementById("myaudio");
-        audio.volume = 0.1;
-    };
-    volumeDowm();
+
 });
